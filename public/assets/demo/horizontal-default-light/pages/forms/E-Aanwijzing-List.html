@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JustDo Premium Bootstrap Admin Dashboard Template</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../../vendors/iconfonts/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../../css/horizontal-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../../../images/favicon.png" />
+</head>
+
+<body>
+ 
+            <div class="container-fluid page-body-wrapper">
+                <div class="main-panel">
+                    <div class="content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+								<div class="card">
+									<div class="card-body">
+									<h4 class="card-title">Daftar Paket</h4>
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">&#149;  Pencarian Paket &#149;</h4>
+												<form class="form-sample" NAME="sort" ACTION="e-mr-selection.asp" METHOD="POST">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-group">
+																<label>Dasar Pencarian</label>
+																<SELECT NAME="SortField" class="form-control" onChange="JavaScript:txtSearch.style.background='white';txtSearch.disabled=false;txtSearch.focus();" >
+																<option  value="MR_ID" >DAY</option><option  value="MR_ID2" >DATE</option><option  value="tmp.TITLE" >START TIME</option><option  value="PROJECT_NM" >END TIME</option>
+																</SELECT>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="form-group">
+																<label>Cari</label>
+																<INPUT NAME="txtSearch" TYPE="text" class="form-control form-control-sm" onKeyUp="KeyUp()"  value="">
+															</div>
+														</div>
+														<div class="col-md-2">
+															<div class="form-group">
+																<label>Urut</label>
+																<SELECT NAME="SortAD" class="form-control">
+																<option  value="ASC" >Naik</option><option  value="DESC" >Turun</option>
+																</SELECT>
+															</div>
+														</div>
+														<div class="col-md-2">
+															<div class="form-group">
+																<label>&nbsp;</label>
+																<INPUT TYPE="submit" VALUE="Cari" class="form-control btn btn-primary btn-sm ">
+															</div>
+														</div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label>&nbsp;</label>
+                                                                <INPUT TYPE="submit" VALUE="Create" class="form-control btn btn-primary btn-sm ">
+                                                            </div>
+                                                        </div>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="table-responsive">
+											<table id="order-listing" class="table table-striped ">
+												<thead>	
+													<tr>
+														<th width="5%">No.</th>
+														<th width="20%">CREATED DATE</th>
+														<th width="15%">DAY</th>
+														<th width="15%">DATE</th>
+														<th width="20%">START TIME</th>
+														<th width="20%" >END TIME</th>
+                                                        <th width="15%" >ID NUMBER</th>
+													</tr>
+												</thead>
+												<tbody>
+													 <tr><td align="center" colspan=7 >Total : 0 data, Halaman (1) dari :&nbsp;<center><nav><ul class="pagination flex-wrap d-flex justify-content-center "></ul></nav></center></td></tr>
+												</tbody>
+											</table>
+										</div>
+                                        <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>&nbsp;</label>
+                                            <INPUT TYPE="submit" VALUE="Close" class="form-control btn btn-primary btn-sm ">
+                                        </div>
+                                        </div>										
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<footer class="footer">
+    <div class="w-100 clearfix">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="#" target="_blank">e-Procurement</a>. All rights reserved.</span>
+        
+    </div>
+    
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../../js/off-canvas.js"></script>
+  <script src="../../../../js/hoverable-collapse.js"></script>
+  <script src="../../../../js/template.js"></script>
+  <script src="../../../../js/settings.js"></script>
+  <script src="../../../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../../../js/file-upload.js"></script>
+  <script src="../../../../js/typeahead.js"></script>
+  <script src="../../../../js/select2.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

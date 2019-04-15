@@ -12,5 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+// ADMIN
+
+Route::get('/', function () {
+    return view('index');
+});
+
+// ADMIN
+
+Route::get('/admin/index', function(){
+	return view ('admin.index');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
